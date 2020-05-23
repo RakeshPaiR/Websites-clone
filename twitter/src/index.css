@@ -11,3 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.twitter-logo svg{
+  width: 30px;
+  fill: rgb(29, 161, 242);
+}
+
+.header {
+  margin-top: 1vh;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.row .col {
+  padding: 0 1vw 0 1vw;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.search-input {
+  width: 30vw;
+  padding: 10px;
+  border-radius: 25px;
+  background-color: rgb(238, 238, 238);
+  border: 2px solid rgb(238, 238, 238);
+}
