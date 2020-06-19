@@ -1,2 +1,2 @@
-# Twitter-clone
-An attempt to clone twitter website
+# Websites-clone
+An attempt to clone popular websites
