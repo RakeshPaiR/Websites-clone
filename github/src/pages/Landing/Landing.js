@@ -1,9 +1,10 @@
 import React from 'react';
+import Signupform from '../../components/SIgnupform/Signupform';
 
 function Landing() {
     return(
         <>
-            <h1>Hello</h1>
+            <Signupform />
         </>
     );
 }
