@@ -1,11 +1,16 @@
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
 .center {
     text-align: center;
 }
 .navbar {
     background-color: #24292e;
-    padding: 5px 15vw 5px 15vw;
+    padding: 15px 5vw 15px 5vw;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .navbar-item {
     padding:0  0.5vw 0 0.5vw;
@@ -20,8 +25,8 @@
 }
 .navbar-item > input:focus {
     background-color: white;
-    width: 300px;
-    margin-left: 4vw;
+    width: 25vw;
+    margin-left: 0.5vw;
 }
 .navbar-item > input:focus + img {
     display: none;
@@ -29,7 +34,7 @@
 .navbar-item > input:focus::placeholder {
     color: white;
 }
-.navbar-item > p > svg {
+.navbar-item > a > svg {
     x: 0px;
     y: 0px;
     fill: none;
@@ -47,14 +52,21 @@
     width: 300px;
     border-radius: 3px;
 }
-.navbar-item:hover > p{
+.dropdown > a {
+    display: block;
+    line-height: 2;
+}
+.dropdown > a:hover {
+    color: #0366d6;
+}
+.navbar-item:hover > a{
     color: #ffffff80;
 }
 .navbar-item:hover > .dropdown {
     display: block! important;
 }
 .navbar-item > img{
-    vertical-align: middle;
+    vertical-align: bottom;
     background-color: hsla(0,0%,100%,.125);
     padding: 8px;
     border-radius: 0px 4px 4px 0px;
@@ -72,4 +84,18 @@
 }
 .bold {
     font-weight: bold;
+}
+.box-shadow {
+    -webkit-box-shadow: 0px 0px 41px -15px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 41px -15px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 41px -15px rgba(0,0,0,0.75);
+}
+
+@media (max-width: 1200px) {
+    .navbar {
+        padding: 15px 0vw 15px 0vw;
+    }
+    .navbar-item > input {
+        margin-left: 2vw;
+    }
 }
