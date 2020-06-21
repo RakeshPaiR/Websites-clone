@@ -1,0 +1,75 @@
+.center {
+    text-align: center;
+}
+.navbar {
+    background-color: #24292e;
+    padding: 5px 15vw 5px 15vw;
+    display: flex;
+    align-items: center;
+}
+.navbar-item {
+    padding:0  0.5vw 0 0.5vw;
+}
+.navbar-item > input {
+    margin-left: 8vw;
+    font-size: inherit;
+    background-color: hsla(0,0%,100%,.125);
+    border: none;
+    padding: 9px;
+    border-radius: 4px 0px 0px 4px;
+}
+.navbar-item > input:focus {
+    background-color: white;
+    width: 300px;
+    margin-left: 4vw;
+}
+.navbar-item > input:focus + img {
+    display: none;
+}
+.navbar-item > input:focus::placeholder {
+    color: white;
+}
+.navbar-item > p > svg {
+    x: 0px;
+    y: 0px;
+    fill: none;
+    width: 12px;
+    stroke: hsla(0,0%,100%,.5);
+    background: transparent;
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: black;
+    padding: 20px 20px 20px 20px;
+    text-align:left;
+    width: 300px;
+    border-radius: 3px;
+}
+.navbar-item:hover > p{
+    color: #ffffff80;
+}
+.navbar-item:hover > .dropdown {
+    display: block! important;
+}
+.navbar-item > img{
+    vertical-align: middle;
+    background-color: hsla(0,0%,100%,.125);
+    padding: 8px;
+    border-radius: 0px 4px 4px 0px;
+}
+.text-white {
+    color: white!important;
+    fill: white! important;
+}
+.white-border {
+    padding: 5px;
+    border: 1px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 3px;
+}
+.bold {
+    font-weight: bold;
+}
