@@ -1,0 +1,19 @@
+.bg-blue {
+    background-color: #044289 !important;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-green {
+    color: #28a745;
+}
+
+.label {
+    text-transform: uppercase;
+    border: 1px solid #34d058;
+    border-radius: 3px;
+    background-color: #044289;
+    padding: 3px;
+}
