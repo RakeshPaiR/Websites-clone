@@ -1,23 +1,25 @@
-* {
-    box-sizing: border-box;
-}
 .form-label {
-    font-weight: 500;
+    font-weight: 600;
     display: block;
 }
-input{
+.form-div input{
     border: 1px solid #d1d5da;
     border-radius:0.25rem;
-    padding: 10px;
+    padding: 10px !important;
+    min-height: 46px;
     width: calc(100%);
+    line-height: 20px;
+    background-color: #fafbfc;
+    box-shadow: inset 0 1px 2px rgba(27,31,35,.075);
+    font-size: 16px;
 }
-input:focus {
+.form-div input:focus {
     border-color: #2188ff;
     outline: none;
     box-shadow: inset 0 1px 2px rgba(27,31,35,.075), 0 0 0 0.2em rgba(3,102,214,.3);
 }
-.mb-6 {
-    margin-bottom: 6px;
+.mb-5 {
+    margin-bottom: 5px;
 }
 .w-50 {
     width: 50%;
@@ -27,10 +29,16 @@ input:focus {
 } */
 .form-div {
     color: #24292e;
+    background-color: #fafbfc;
+    border-radius: .25em;
+    text-align: left;
+    margin: auto;
+    font-size: 16px;
+    line-height: 1.5;
 }
 .form-group {
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 15px !important;
 }
 .px-4 {
     padding-left: 24px !important;
@@ -61,12 +69,13 @@ input:focus {
 .btn-lg {
     width: 100%;
     padding: 20px 32px; 
+    margin: 16px 0;
 }
-a {
+.form-div a {
     color: #0366d6;
     text-decoration: none;
 }
-a:hover {
+.form-div a:hover, .form-div a:focus {
     text-decoration: underline;
 }
 .tooltip {
@@ -100,4 +109,11 @@ a:hover {
 }
 .tooltip:hover .tooltiptext {
     visibility: visible;
+}
+.agree {
+    color: #6a737d;
+    margin-bottom: 0;
+}
+.form-div .form-group p {
+    margin-top: 5px;
 }

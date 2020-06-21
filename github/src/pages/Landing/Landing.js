@@ -1,10 +1,10 @@
 import React from 'react';
-import Signupform from '../../components/SIgnupform/Signupform';
+import Hero from '../../components/Hero/Hero';
 
 function Landing() {
     return(
         <>
-            <Signupform />
+            <Hero />
         </>
     );
 }
