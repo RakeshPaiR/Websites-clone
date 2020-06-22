@@ -7,7 +7,11 @@ function NewFreeBanner() {
     return (
         <section>
             <div
-                className={classNames(styles['bg-blue'], styles['text-white'])}
+                className={classNames(
+                    styles['text-white'],
+                    styles['banner'],
+                    styles['bg-blue']
+                )}
             >
                 <span
                     className={classNames(

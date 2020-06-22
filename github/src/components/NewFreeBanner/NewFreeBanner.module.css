@@ -1,5 +1,14 @@
+.banner {
+    background-image: url(https://github.com/images/modules/site/patterns/contribution-graph.svg);
+    background-size: 40% auto;
+    mix-blend-mode: multiply;
+
+    padding: 20px;
+    border-radius: 5px;
+}
+
 .bg-blue {
-    background-color: #044289 !important;
+    background-color: #044289;
 }
 
 .text-white {
