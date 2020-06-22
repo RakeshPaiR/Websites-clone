@@ -5,8 +5,33 @@ a {
 hr {
     border-color: #ece7e740;
 }
+.margin-0 {
+    margin: 0! important;
+}
+.padding-0 {
+    padding: 0! important;
+}
+.padding-2 {
+    padding: 5px;
+}
+.display-flex {
+    display: flex! important;
+}
+.solid-border {
+    border-style: solid;
+    border-color: lightgrey;
+    border-width: 1px;
+    border-radius: 5px;
+}
+.margin-top-2 {
+    margin-top: 20px;
+}
+.margin-top-4 {
+    margin-top: 40px;
+}
 .center {
     text-align: center;
+    justify-content: center;
 }
 .navbar {
     background-color: #24292e;
@@ -32,6 +57,7 @@ hr {
 .navbar-item > input:focus {
     background-color: white;
     width: 25vw;
+    min-width: 300px;;
     margin-left: 0.5vw;
 }
 .navbar-item > input:focus + img {
@@ -40,7 +66,7 @@ hr {
 .navbar-item > input:focus::placeholder {
     color: white;
 }
-.navbar-item > a > svg {
+.drop-down-svg {
     x: 0px;
     y: 0px;
     fill: none;
@@ -48,7 +74,14 @@ hr {
     stroke: hsla(0,0%,100%,.5);
     background: transparent;
 }
-.dropdown {
+.sidebar .drop-down-svg {
+    stroke: #000000;
+    position: absolute;
+    right: 20px;
+    width: 14px;
+    margin-top: 10px;
+}
+.navbar > .navbar-item > .dropdown {
     display: none;
     position: absolute;
     background-color: white;
@@ -58,17 +91,17 @@ hr {
     width: 300px;
     border-radius: 3px;
 }
-.dropdown > a {
+.navbar > .navbar-item > .dropdown > a {
     display: block;
     line-height: 2;
 }
 .dropdown > a:hover {
     color: #0366d6;
 }
-.navbar-item:hover > a{
+.navbar > .navbar-item:hover > a{
     color: #ffffff80;
 }
-.navbar-item:hover > .dropdown {
+.navbar > .navbar-item:hover > .dropdown {
     display: block! important;
 }
 .navbar-item > img{
@@ -112,10 +145,12 @@ hr {
     color: black;
     z-index: 2;
     padding: 20px;
+    line-height: 2;
+    display: none;
 }
-.sidebar > a, .sidebar > div {
+.sidebar > .navbar-item {
     color: black;
-    padding: 15px;
+    padding: 5px 5px 5px 0px;
     display: block;
     text-align: left;
 }
@@ -124,10 +159,22 @@ hr {
     fill: black;
     cursor: pointer;
 }
-.sidebar > .dropdown {
+.sidebar > .navbar-item > .dropdown {
+    margin-top: 5px;
     display: none;
+    font-size: 12px;
 }
-
+.sidebar > .navbar-item > .dropdown > a{
+    display: block;
+}
+.sidebar > .navbar-item .active + .dropdown {
+    display: block
+}
+.navbar > .sidebar input {
+    margin-left: 0px;
+    width: 220px;
+    padding: 10px;
+}
 @media (max-width: 1200px) {
     .navbar {
         padding: 15px 0vw 15px 0vw;
@@ -155,5 +202,8 @@ hr {
     }
     .navbar > .navbar-item {
         display: none;
+    }
+    .sidebar {
+        display: block;
     }
 }
