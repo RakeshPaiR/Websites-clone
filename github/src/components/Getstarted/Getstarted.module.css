@@ -1,0 +1,185 @@
+.getStartedSect {
+    padding: 48px 16px 40px;
+    text-align: center;
+    position: relative;
+    line-height: 1.5;
+}
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 15px rgba(27,31,35,.15)!important;
+    padding: 24px;
+    position: relative;
+}
+.container::before {
+    background: url(https://github.githubassets.com/images/modules/site/patterns/dots-small.svg);
+    position: absolute;
+    top: -31px;
+    left: -31px;
+    z-index: -1;
+    width: 75%;
+    height: 100%;
+    content: '';
+}
+.head {
+    font-size: 26px;
+    font-weight: 500;
+    color: #24292e;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.25;
+    margin-top: 0;
+}
+.lead {
+    color: #586069;
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+.head-area {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.mb-2 {
+    margin-bottom: 8px;
+}
+.col-6 {
+    padding: 16px;
+}
+.button-area  h3 {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif ;
+    font-weight: 500;
+}
+.button-area p {
+    margin-top: 0;
+    color: #586069;
+    font-size: 14px;
+}
+.btn {
+    border: 1px solid black;
+    margin: 8px 0 4px;
+    padding: 16px 24px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+.btn-primary {
+    color: #FFF;
+    background-color: #1074E7;
+    border-color: #1074E7;
+}
+.btn-primary:hover {
+    background-color: #0366D6;
+    border-color: #0366D6;
+}
+.btn-outline-primary {
+    background-color: transparent;
+    border-color: rgba(16, 116, 231, 0.5);
+    color: #1074E7;
+    position: relative;
+}
+.btn-outline-primary:hover {
+    border-color: #1074E7;
+    color: #0366D6;
+}
+.btn-outline-primary span {
+    display: inline-block;
+    transition: opacity .2s, transform .2s;
+    transform: translateX(0);
+}
+.btn-outline-primary:hover span {
+    transform: translateX(3px);
+}
+@media (min-width: 540px) {
+    .head-area {
+        width: 100%;
+    }
+    .button-area {
+        width: 100%;
+    }
+    [class^='col-'] {
+        float: left;
+    }
+    .col-6 {
+        width: 50%;
+        display: inline-block;
+    }
+    .getStartedSect {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+}
+.d-none {
+    display: none;
+}
+.position-absolute {
+    position: absolute;
+}
+.right-0 {
+    right: 0;
+}
+.top-0 {
+    top: 0;
+}
+.z-3 {
+    z-index: 300;
+}
+
+@media (min-width: 768px) {
+    .d-none {
+        display: block;
+    }
+    .getStartedSect {
+        padding: 128px 40px 80px;
+    }
+    .container::before {
+        width: 40%;
+    }
+    .container {
+        padding: 48px;
+    }
+    .col-6 {
+        width: 41.6667%;
+    }
+    .head {
+        font-size: 32px;
+    }
+    .lead {
+        font-size: 20px;
+    }
+}
+@media (min-width: 1012px) {
+    .col-4 {
+        width: 33.33%;
+        text-align: left;
+        float: left;
+    }
+    .clear {
+        clear: both;
+        content: '';
+        display: table;
+    }
+    .col-8 {
+        width: 56.67%;
+        float: right;
+    }
+    .col-6 {
+        width: 50%;
+        float: left;
+    }
+    .lead {
+        margin-right: 40px;
+    }
+    .getStartedSect{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .extDiv {
+        padding-left: 24px;
+        padding-right: 24px;
+        max-width: 1280px;
+        margin: auto;
+    }
+}
