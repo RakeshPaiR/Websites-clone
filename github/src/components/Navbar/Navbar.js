@@ -43,6 +43,7 @@ class Navbar extends Component {
                         <a href="#">Security</a>
                         <a href="#">Team management</a>
                         <a href="#">Hosting</a>
+                        <hr></hr>
                         <a href="#" className={classNames(styles['bold'])}>Customer stories</a>
                         <a href="#" className={classNames(styles['bold'])}>Security</a>
                     </div>
