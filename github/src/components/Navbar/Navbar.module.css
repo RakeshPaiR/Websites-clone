@@ -2,6 +2,9 @@ a {
     color: inherit; /* blue colors for links too */
     text-decoration: inherit; /* no underline */
 }
+hr {
+    border-color: #ece7e740;
+}
 .center {
     text-align: center;
 }
@@ -11,6 +14,9 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.navbar > svg {
+    margin-right: 20px;
 }
 .navbar-item {
     padding:0  0.5vw 0 0.5vw;
@@ -90,6 +96,37 @@ a {
     -moz-box-shadow: 0px 0px 41px -15px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 41px -15px rgba(0,0,0,0.75);
 }
+.navbar > .navbar-mobile > .hamberger {
+    display: none;
+    margin-left: auto;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.sidebar {
+    width: 300px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: white;
+    height: 200vh;
+    color: black;
+    z-index: 2;
+    padding: 20px;
+}
+.sidebar > a, .sidebar > div {
+    color: black;
+    padding: 15px;
+    display: block;
+    text-align: left;
+}
+.sidebar > .close {
+    text-align: right;
+    fill: black;
+    cursor: pointer;
+}
+.sidebar > .dropdown {
+    display: none;
+}
 
 @media (max-width: 1200px) {
     .navbar {
@@ -97,5 +134,26 @@ a {
     }
     .navbar-item > input {
         margin-left: 2vw;
+    }
+}
+@media (max-width: 1000px) {
+    .navbar > .navbar-mobile > .hamberger {
+        display: block;
+        margin-left: 30px;
+    }
+    .navbar > .navbar-mobile > .navbar-signup {
+        display: block;
+    }
+    .navbar-mobile {
+        display: flex;
+        margin-left: auto;
+        align-items: center;
+    }
+    .navbar > svg {
+        margin-right: auto;
+        margin-left: 30px;
+    }
+    .navbar > .navbar-item {
+        display: none;
     }
 }
