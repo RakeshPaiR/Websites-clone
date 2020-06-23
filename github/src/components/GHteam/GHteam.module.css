@@ -1,0 +1,236 @@
+.GHteam {
+    color: #24292E;
+    line-height: 1.5;
+    padding: 48px 0;
+}
+.GHteam :any-link, .GHteam .btn, .GHteam button {
+    cursor: pointer;
+}
+.GHteam img {
+    max-width: 100%;
+}
+.container {
+    padding: 0 16px;
+}
+.team-head {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    padding-bottom: 40px;
+}
+.sect-head {
+    color: #586069;
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace!important;
+    font-weight: 400;
+    margin: 0;
+}
+.head {
+    font-size: 40px;
+    font-weight: 500;
+    margin: 16px 0 8px;
+}
+.lead {
+    color: #586069;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+.btn {
+    padding: 20px 32px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+.btn-outline-primary {
+    background-color: transparent;
+    border-color: rgba(16, 116, 231, 0.5);
+    color: #1074E7;
+}
+.btn-outline-primary:hover {
+    border-color: #1074E7;
+    color: #0366D6;
+}
+.btn-primary {
+    color: #FFF;
+    background-color: #1074E7;
+    border-color: #1074E7;
+}
+.btn-primary:hover {
+    background-color: #0366D6;
+    border-color: #0366D6;
+}
+.btn-outline-primary span {
+    display: inline-block;
+    transition: opacity .2s, transform .2s;
+    transform: translateX(0);
+}
+.btn-outline-primary:hover span {
+    transform: translateX(3px);
+}
+.col-10 {
+    width: 83.33%;
+    display: inline-block;
+}
+.col-2 {
+    margin-left: auto;
+}
+.img-div {
+    display: block;
+    margin: auto;
+}
+.d-flex {
+    display: flex;
+    border: 1px solid transparent;
+    margin: 24px 0;
+    font-size: 14px;
+    align-items: center;
+    /* justify-content: space-between; */
+    text-decoration: none;
+    color: #24292E;
+}
+.rt-tri {
+    font-size: 8px;
+    color: #0366d6;
+    text-align: right;
+}
+.link {
+    color: #0366d6;
+    border-bottom: 1px solid #0366D6;
+}
+.d-flex h3 {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    margin: 0 0 4px;
+}
+.d-flex p {
+    margin: 0;
+}
+.content-div {
+    padding: 40px 0 0;
+}
+.responsive-div {
+    padding: 0 16px;
+}
+.enterprise-header {
+    text-align: center;
+    margin: 40px 0 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Inter', sans-serif;
+}
+.tile-section {
+    padding: 0 16px;
+}
+.tile {
+    padding: 16px 16px 0px;
+    box-shadow: 0 2px 4px rgba(27,31,35,.15);
+}
+.tile:hover .cust-story {
+    display: block;
+    opacity: 1;
+    transform: translateZ(0) scale(1);
+}
+.tile-img-btn-div {
+    position: relative;
+    height: 200px;
+    background-position: 50%;
+    background-size: cover;
+    overflow: hidden;
+}
+.cust-story {
+    padding: 8px 16px;
+    font-size: 22px;
+    line-height: 1.5;
+    display: none;
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 8px;
+    margin-right: 8px;
+    margin-left: auto;
+    transform: translate3d(-5px,5px,0) scale(.95);
+    transition: opacity .4s, transform .4s;
+    opacity: 0;
+}
+.tile-img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.tile-article {
+    padding: 8px 0;
+}
+.tile-content-div {
+    padding: 16px 0 0;
+}
+.tile-head {
+    font-family: 'Inter',sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 4px;
+}
+.tile-lead {
+    font-size: 12px;
+    color: #586069;
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+.read-more {
+    border-top: 1px solid #e1e4e8;
+    border-bottom: none;
+    width: 100%;
+    padding: 16px 0;
+    font-size: 14px;
+}
+.push-rt {
+    float: right;
+    transition: opacity .2s, transform .2s;
+    transform: translateX(-3px);
+}
+.tile:hover .push-rt{
+    transform: translateX(3px);
+}
+.read-more p {
+    margin: 0;
+}
+
+@media (min-width: 544px) {
+    .container {
+        padding: 0 40px 40px;
+    }
+    .img-div {
+        width: 58.33%;
+
+    }
+    .responsive-div {
+        padding-right: 40px;
+        padding-left: 40px;
+        position: relative;
+    }
+    .content-div {
+        padding: 40px 0 0;
+    }
+    .summary-img-div {
+        position: absolute;
+        right: 40px;
+        width: 25%;
+        top: -50%;
+        display: block;
+        opacity: 0;
+        transition: opacity .7s;
+    }
+    .summary-block:hover .summary-img-div {
+        top: 24px;
+        opacity: 1;
+    }
+    .summary-block {
+        border: 1px solid transparent;
+        transition: box-shadow .3s, border-color .3s;
+    }
+    .summary-block:hover {
+        border-color: #d1d5da;
+        box-shadow: 0 1px 15px rgba(27,31,35,.15);
+        
+    }
+}
