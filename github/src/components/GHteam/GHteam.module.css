@@ -259,3 +259,15 @@
         float: left;
     }
 }
+@media (min-width: 768px) {
+    .tile-article {
+        padding: 16px;
+        width: 33.33%;
+        margin: auto;
+    }
+    .tile-section {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
