@@ -222,7 +222,6 @@
         position: absolute;
         right: 40px;
         width: 25%;
-        top: -50%;
         display: block;
         opacity: 0;
         transition: opacity .7s;
