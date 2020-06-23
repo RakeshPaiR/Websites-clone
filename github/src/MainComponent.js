@@ -6,7 +6,6 @@ class Main extends Component {
     render() {
         return (
             <div>
-                <Navbar />
                 <Landing />
             </div>
         )
