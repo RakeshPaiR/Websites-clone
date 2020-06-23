@@ -18,21 +18,23 @@ function GHteam() {
                             <img src="https://github.githubassets.com/images/modules/site/home/team.svg" alt="" className={classNames(styles['lead-img'])}/>
                         </div>
                         <div className={classNames(styles['col-12'], styles['col-lg-5'])}>
-                            <a href="" className={classNames(styles['d-flex'], styles['summary-block'])}>
+                            <a href="" className={classNames(styles[''], styles['summary-block'])}>
                                 <div className={classNames(styles['summary-img-div'])}>
                                     <img src="https://github.githubassets.com/images/modules/site/home/team-code.svg" alt="" className={classNames(styles['summary-img'])}/>
                                 </div>
-                                <div className={classNames(styles['col-10'])}>
-                                    <h3>Write better code</h3>
-                                    <p>Collaboration makes perfect. The conversations and code reviews that happen in pull requests help your team share the weight of your work and improve the software you build.&nbsp;
-                                        <span className={classNames(styles['link'])}>Learn about code review.</span>
-                                    </p>
-                                </div>
-                                <div className={classNames(styles['col-2'], styles['rt-tri'])}>
-                                    <span>&#9658;</span>
+                                <div className={classNames(styles['summary-content'])}>
+                                    <div className={classNames(styles['col-10'])}>
+                                        <h3>Write better code</h3>
+                                        <p>Collaboration makes perfect. The conversations and code reviews that happen in pull requests help your team share the weight of your work and improve the software you build.&nbsp;
+                                            <span className={classNames(styles['link'])}>Learn about code review.</span>
+                                        </p>
+                                    </div>
+                                    <div className={classNames(styles['col-2'], styles['rt-tri'])}>
+                                        <span>&#9658;</span>
+                                    </div>
                                 </div>
                             </a>
-                            <a href="" className={classNames(styles['d-flex'], styles['summary-block'])}>
+                            <a href="" className={classNames(styles[''], styles['summary-block'])}>
                                 <div className={classNames(styles['summary-img-div'])}>
                                     <img src="https://github.githubassets.com/images/modules/site/home/team-chaos.svg" alt="" className={classNames(styles['summary-img'])}/>
                                 </div>
@@ -48,18 +50,20 @@ function GHteam() {
                                     </div>
                                 </div>
                             </a>
-                            <a href="" className={classNames(styles['d-flex'], styles['summary-block'])}>
+                            <a href="" className={classNames(styles[''], styles['summary-block'])}>
                                 <div className={classNames(styles['summary-img-div'])}>
                                     <img src="https://github.githubassets.com/images/modules/site/home/team-tools.svg" alt="" className={classNames(styles['summary-img'])}/>
                                 </div>
-                                <div className={classNames(styles['col-10'])}>
-                                    <h3>Find the right tools</h3>
-                                    <p>Browse and buy apps from GitHub Marketplace with your GitHub account. Find the tools you like or discover new favorites—then start using them in minutes.&nbsp;
-                                        <span className={classNames(styles['link'])}>Learn about integrations.</span>
-                                    </p>
-                                </div>
-                                <div className={classNames(styles['col-2'], styles['rt-tri'])}>
-                                    <span>&#9658;</span>
+                                <div className={classNames(styles['summary-content'])}>
+                                    <div className={classNames(styles['col-10'])}>
+                                        <h3>Find the right tools</h3>
+                                        <p>Browse and buy apps from GitHub Marketplace with your GitHub account. Find the tools you like or discover new favorites—then start using them in minutes.&nbsp;
+                                            <span className={classNames(styles['link'])}>Learn about integrations.</span>
+                                        </p>
+                                    </div>
+                                    <div className={classNames(styles['col-2'], styles['rt-tri'])}>
+                                        <span>&#9658;</span>
+                                    </div>
                                 </div>
                             </a>
                         </div>
